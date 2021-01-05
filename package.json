@@ -1,0 +1,26 @@
+{
+  "name": "resynz-vue-network-handler",
+  "version": "1.0.0",
+  "description": "http request manage for vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Resynz/resynz-vue-network-handler.git"
+  },
+  "keywords": [
+    "vue-http"
+  ],
+  "author": "Resynz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Resynz/resynz-vue-network-handler/issues"
+  },
+  "homepage": "https://github.com/Resynz/resynz-vue-network-handler#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "qs": "^6.9.4"
+  }
+}
