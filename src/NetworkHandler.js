@@ -8,9 +8,6 @@ const paramMethod = ['GET', 'DELETE']
 const dataMethod = ['POST', 'PUT', 'PATCH']
 
 class NetworkHandler {
-    name = 'NetworkHandler'
-    log = false
-    apiMaps = new Map()
 
     _beforeFunc (name, ...args) {
         this.log && console.log(`[${this.name}] api:【${name}】 running before function`)
@@ -22,15 +19,15 @@ class NetworkHandler {
         return this.afterFunc(...args)
     }
 
-    timeout = 10000
-
     constructor ({ beforeFunc, afterFunc, apis, timeout = 10000, log = false }) {
-        this.beforeFunc = beforeFunc
-        this.afterFunc = afterFunc
-        this.timeout = timeout
-        this.log = log
+        this.name = 'NetworkHandler';
+        this.apiMaps = new Map();
+        this.beforeFunc = beforeFunc;
+        this.afterFunc = afterFunc;
+        this.timeout = timeout || 10000;
+        this.log = log || false;
         apis.forEach(v => {
-            v.method = v.method.toUpperCase()
+            v.method = v.method.toUpperCase();
             this.apiMaps.set(v.name, v)
         })
     }

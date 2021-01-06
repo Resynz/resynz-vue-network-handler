@@ -1,6 +1,6 @@
 {
   "name": "resynz-vue-network-handler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "http request manage for vue",
   "main": "index.js",
   "scripts": {
